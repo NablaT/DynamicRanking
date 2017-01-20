@@ -1,0 +1,12 @@
+environments:
+ - [nodejs-4.2, SLES-11]
+build: 
+ - node --version
+#    PATH=$PWD/node_modules/.bin:$PATH
+#    grunt --version
+test: 
+ - cat app.js
+publish:
+ - npm install
+ - pwd
+ - ls -la
